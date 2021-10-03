@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApiCatalogoLivrosAutistas.Services
 {
-    public interface ILivroService
+    public interface ILivroService : IDisposable
     {
         Task<List<LivroViewModel>> Obter(int pagina, int quantidae);
 
