@@ -31,6 +31,9 @@ namespace ApiCatalogoLivrosAutistas
             services.AddScoped<ILivroService, LivroService>();
             services.AddScoped<ILivroRepository, LivroRepository>();
 
+            //Conexão com banco de dados SQL
+            //services.AddScoped<ILivroRepository, LivroSqlServerRepository>();  
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

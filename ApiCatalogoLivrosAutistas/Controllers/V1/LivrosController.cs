@@ -32,7 +32,7 @@ namespace ApiCatalogoLivrosAutistas.Controllers.V1
         */
         
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<livroViewModel>>> Obter([FromQuery, Range(1, int.MaxValue)] int pagina = 1, [FromQuery, Range(1, 50)] int quantidade = 5)
+        public async Task<ActionResult<IEnumerable<LivroViewModel>>> Obter([FromQuery, Range(1, int.MaxValue)] int pagina = 1, [FromQuery, Range(1, 50)] int quantidade = 5)
         {
             var livro = await _livroService.Obter(pagina, quantidade);
 
@@ -53,7 +53,7 @@ namespace ApiCatalogoLivrosAutistas.Controllers.V1
         */
         
         [HttpGet("{idLivro:guid}")]
-        public async Task<ActionResult<livroViewModel>> Obter([FromRoute] Guid idLivro)
+        public async Task<ActionResult<LivroViewModel>> Obter([FromRoute] Guid idLivro)
         {
             var livro = await _livroService.Obter(idLivro);
 
