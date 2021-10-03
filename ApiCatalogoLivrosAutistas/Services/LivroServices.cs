@@ -1,4 +1,6 @@
-﻿using ApiCatalogoLivrosAutistas.InputModel;
+﻿using ApiCatalogoLivrosAutistas.Entities;
+using ApiCatalogoLivrosAutistas.Exceptions;
+using ApiCatalogoLivrosAutistas.InputModel;
 using ApiCatalogoLivrosAutistas.Repositories;
 using ApiCatalogoLivrosAutistas.ViewModel;
 using System;

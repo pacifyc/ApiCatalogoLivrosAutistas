@@ -1,4 +1,5 @@
-﻿using ApiCatalogoLivrosAutistas.InputModel;
+﻿using ApiCatalogoLivrosAutistas.Exceptions;
+using ApiCatalogoLivrosAutistas.InputModel;
 using ApiCatalogoLivrosAutistas.Services;
 using ApiCatalogoLivrosAutistas.ViewModel;
 using Microsoft.AspNetCore.Http;
@@ -80,8 +81,8 @@ namespace ApiCatalogoLivrosAutistas.Controllers.V1
 
                 return Ok(livro);
             }
-            //catch (LivroJaCadastradoException ex)
-            catch(Exception ex)
+            catch (LivroJaCadastradoException)
+            //atch(Exception ex)
             {
                 return UnprocessableEntity("Já existe um jogo com este nome para esta produtora");
             }
@@ -106,8 +107,8 @@ namespace ApiCatalogoLivrosAutistas.Controllers.V1
 
                 return Ok();
             }
-            //catch (LivroNaoCadastradoException ex)
-            catch (Exception ex)
+            catch (LivroNaoCadastradoException)
+            //catch (Exception ex)
             {
                 return NotFound("Não existe este jogo");
             }
@@ -133,8 +134,8 @@ namespace ApiCatalogoLivrosAutistas.Controllers.V1
 
                 return Ok();
             }
-            //catch (LivroNaoCadastradoException ex)
-            catch (Exception ex)
+            catch (LivroNaoCadastradoException)
+            //catch (Exception ex)
             {
                 return NotFound("Não existe este jogo");
             }
@@ -159,8 +160,8 @@ namespace ApiCatalogoLivrosAutistas.Controllers.V1
 
                 return Ok();
             }
-            //catch (LivroNaoCadastradoException ex)
-            catch(Exception ex)
+            catch (LivroNaoCadastradoException)
+            //catch(Exception ex)
             {
                 return NotFound("Não existe este jogo");
             }
