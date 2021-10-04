@@ -33,3 +33,4 @@ D:\000 - Repositorio GitHub\ApiCatalogoLivrosAutistas\ApiCatalogoLivrosAutistas\
 D:\000 - Repositorio GitHub\ApiCatalogoLivrosAutistas\ApiCatalogoLivrosAutistas\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
 D:\000 - Repositorio GitHub\ApiCatalogoLivrosAutistas\ApiCatalogoLivrosAutistas\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\000 - Repositorio GitHub\ApiCatalogoLivrosAutistas\ApiCatalogoLivrosAutistas\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\000 - Repositorio GitHub\ApiCatalogoLivrosAutistas\ApiCatalogoLivrosAutistas\bin\Debug\net5.0\ApiCatalogoLivrosAutistas.xml
